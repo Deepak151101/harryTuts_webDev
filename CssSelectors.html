@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selectors in CSS</title>
+
+    <style>
+        #cyanElement {
+            border: 2px solid lawngreen;
+        }
+
+        /* #Id selector */
+        #cyanElement {
+            color: cyan;
+            background-color: magenta;
+        }
+
+        #redElement {
+            border: 2px solid cadetblue;
+        }
+
+        /* #Id selector */
+        #redElement {
+            color: red;
+            background-color: gold;
+        }
+
+        .colorElement {
+            border: 2px solid firebrick;
+        }
+
+        /* .class selector */
+        .colorElement {
+            color: blue;
+            background-color: aquamarine;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h3>CSS Selectors</h3>
+    <p class="colorElement" id="cyanElement">This is a simple paragraph to demonstrate CSS Selectors</p>
+
+    <p class="colorElement" id="redElement">This is another paragraph to demonstrate CSS Selectors</p>
+
+    <div>
+        <p class="colorElement" id="pinkElement">This is third paragraph inside div to demonstrate CSS Selectors</p>
+    </div>
+
+</body>
+
+</html>

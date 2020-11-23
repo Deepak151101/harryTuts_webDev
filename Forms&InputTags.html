@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Forms </title>
+    <h2>Learning HTML Forms & Input tags</h2>
+</head>
+
+<body>
+    <form action="backend.php">
+        <label for="name">Name</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+
+        <br>
+
+        <label for="role">Role</label>
+        <div>
+            <input type="text" name="myRole" id="role">
+        </div>
+
+        <br>
+
+        <label for="email">Email</label>
+        <div>
+            <input type="email" name="myEmail" id="email">
+        </div>
+
+        <br>
+
+        <label for="date">Date</label>
+        <div>
+            <input type="date" name="myDate" id="date">
+        </div>
+
+        <br>
+
+        <label for="bonus">Bonus</label>
+        <div>
+            <input type="number" name="myBonus" id="bonus">
+        </div>
+
+        <br>
+
+        <div>
+            Gender: Male<input type="Radio" name="myGender">
+
+            Female<input type="Radio" name="myGender">
+        </div>
+
+        <br>
+
+        <label for="eligibility">Are you Eligible?</label>
+        <div>
+            <input type="checkbox" name="myEligibility" id="eligibility" checked>
+        </div>
+
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="au">Audi</option>
+                <option value="mcd">Mercedes</option>
+                <option value="fer">Ferrari</option>
+            </select>
+        </div>
+
+        <br>
+
+        <label for="self">Write about Yourself</label>
+        <div>
+            <br><textarea name="myText" col="30" rows="3" id="self"></textarea>
+        </div>
+
+        <br>
+
+        <div>
+            <input type="reset" value="reset">
+        </div>
+
+        <br>
+
+        <div>
+            <input type="submit" value="Submit Here">
+        </div>
+
+    </form>
+</body>
+
+</html>

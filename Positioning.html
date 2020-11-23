@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Positioning in CSS</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            background-color: bisque;
+            height: 4000px;
+        }
+
+        .box {
+            border: 4px solid rgb(81, 109, 161);
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        #box3 {
+            /* Relative: relative to it's normal position also it leaves a gap in its normal position */
+            /* position: relative; */
+            /* right: 22px; */
+            /////////////////
+            /* Absolute: relative to the position of its first parent(here container is 1st parent) & no gap is found here */
+            /* position: absolute; */
+            /* right: 30px; */
+            /////////////////
+            /* Fixed: Position fixed to brower window & it is fixed even if page is scrolled */
+
+            /* position: fixed; */
+            /* right: 24px; */
+            /////////////////
+            /* Sticky: Position is sticked to the window */
+            position: sticky;
+            top: 3px;               ........./* Not working? */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>

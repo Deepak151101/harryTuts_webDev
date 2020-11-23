@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Heigth,width,borders and background </title>
+    <style>
+        #firstPara {
+            background-color: red;
+            height: 17px;
+            width: 455px;
+
+            border-width: 2px;
+            border-color: green;
+            border-style: solid;
+            border-radius: 13px;
+
+            /* OR */
+
+            border: 2px solid green;
+
+            /* Both works the same */
+
+        }
+
+        #secondPara {
+            background-color: cyan;
+            height: 200px;
+            width: 450px;
+
+            border-top: 3px solid blue;
+            border-bottom: 3px solid yellow;
+            border-right: 3px solid green;
+            border-left: 3px solid hotpink;
+
+            border-top-left-radius: 5px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 15px;
+
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-image: url('https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png')
+        }
+
+        #thirdPara {
+            height: 500px;
+            width: 255px;
+            border: 4px solid greenyellow;
+            background-repeat: no-repeat;
+            /* Repeat x and y will repeat the image in x and y axes repsectively */
+
+            /* background-position-x: 10px;
+            background-position-y: 50px; */
+
+            background-position: center center;
+            background-image: url('https://www.codewithharry.com/static/home/img/photo.png')
+        }
+    </style>
+</head>
+
+<body>
+    <h2>This is heading</h2>
+    <p id="firstPara">This is a paragraph</p>
+
+    <h2>This is second heading</h2>
+    <p id="secondPara">This is second paragraph
+    </p>
+
+    <h2>This is third heading</h2>
+    <p id="thirdPara">This is Third paragraph</p>
+
+</body>
+
+</html>
+
